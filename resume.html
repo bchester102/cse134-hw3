@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         #info {
             display: flex;
@@ -11,6 +13,16 @@
 
         section {
             flex: 50%
+        }
+
+        main {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .job_position {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -21,7 +33,6 @@
             <a href="/index.html">Home</a>
             <a href="/resume.html">Resume</a>
             <a href="/contact.html">Contact</a>
-            <a href="/experiments.html">Experiments</a>
         </nav>
         <hr>
     </header>
@@ -29,6 +40,7 @@
         <h1>Resume</h1>
         <figure>
             <picture>
+                <source type="image/webp" srcset="./images/wires.webp">
                 <img src="./images/wires.jpg" width="300">
             </picture>
             <figcaption>An STM8L Discovery Board connected to a Raspberry Pi</figcaption>
@@ -37,13 +49,13 @@
             <section id="experience">
                 <h2>Experience</h2>
                 <h3>ZUM Radio</h3>
+                <p class="job_position">Software Developer</p>
                 <ul>
                     <li>Developed software in <strong>C</strong> for the STM8L line of microprocessors</li>
-                    <li>Developed custom data transfer protocol based on <em>I2C</em></li>
+                    <li>Designed and implemented custom data transfer protocol based on <em>I2C</em></li>
                     <li>Worked closely with coworkers using <strong>GitHub</strong> and maintained daily documentation
                         through <Strong>Google Docs</Strong></li>
                 </ul>
-
             </section>
             <section id="skills">
                 <h2>Skills</h2>
@@ -58,6 +70,7 @@
         </div>
     </main>
     <footer>
+        <hr>
         <p>Made with &lt;3 by Bradley Chester </p>
     </footer>
 </body>

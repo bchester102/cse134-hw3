@@ -3,7 +3,31 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        input, option, optgroup, select, textarea{
+            color: black;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        input[type="submit"]{
+            margin: 2px
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        fieldset {
+            display:flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,11 +36,11 @@
             <a href="/index.html">Home</a>
             <a href="/resume.html">Resume</a>
             <a href="/contact.html">Contact</a>
-            <a href="/experiments.html">Experiments</a>
         </nav>
         <hr>
     </header>
     <main>
+        <h1>Contact</h1>
         <form method="get">
             <fieldset>
                 <legend>Contact Info</legend>
@@ -52,6 +76,7 @@
         </form>
     </main>
     <footer>
+        <hr>
         <p>Made with &lt;3 by Bradley Chester </p>
     </footer>
 
